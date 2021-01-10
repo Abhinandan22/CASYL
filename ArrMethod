@@ -33,9 +33,9 @@ var arr = [
     { city: "London", country: "England" },
     { city: "Tokyo", country: "Japan" },
     { city: "Mumbai", country: "India" }
-]
+];
 
 
 arr.filter(function(value,index) {
-  console.log(index.country == "India");
+  console.log(arr[index].country == "India");
 });
