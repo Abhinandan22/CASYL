@@ -1,0 +1,41 @@
+Map : -
+
+var arr = [10,34,22,43,45];
+arr.map(function(value,index){
+console.log(value*2 + " " + index)
+});
+
+20 0
+68 1
+44 2
+86 3
+90 4
+
+forEach : - 
+
+var arr = [10,34,22,43,45];
+arr.forEach(function(value,index){
+    console.log(value + " " + index);
+});
+
+10 0
+34 1
+22 2
+43 3
+45 4
+
+Filter : - 
+
+
+var arr = [
+    { city: "Bangalore", country: "India" },
+    { city: "Delhi", country: "India" },
+    { city: "London", country: "England" },
+    { city: "Tokyo", country: "Japan" },
+    { city: "Mumbai", country: "India" }
+]
+
+
+arr.filter(function(value,index) {
+  console.log(index.country == "India");
+});
