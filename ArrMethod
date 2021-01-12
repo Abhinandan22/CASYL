@@ -35,7 +35,15 @@ var arr = [
     { city: "Mumbai", country: "India" }
 ];
 
+var arr1 = [];
 
 arr.filter(function(value,index) {
-  console.log(arr[index].country == "India");
+  if(arr[index].country == "India")
+    arr1.push(arr[index].city);
+});
+
+
+arr1.forEach(function(value){
+
+gs.print(value);
 });
