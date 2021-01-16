@@ -1,0 +1,81 @@
+HTML :- 
+
+<html>
+      <title>Calculator</title>
+        <body>
+            <div style="text-align: center">
+               <input id="ip1" style="text-align: right" size="10"><br>
+         </div>
+
+         <div style="text-align: center" id="calc">
+              
+            <button id="1" >1</button>
+            <button id="2" >2</button>
+            <button id="3" >3</button>
+            <button id="+" >+</button>
+
+            <br>
+
+            <button id="4" >4</button>
+            <button id="5" >5</button>
+            <button id="6" >6</button>
+            <button id="-" >-</button>
+
+            <br>
+
+            <button id="7" >7</button>
+            <button id="8" >8</button>
+            <button id="9" >9</button>
+            <button id="*" >*</button>
+
+            <br>
+
+            <button id="0" >0</button>
+            <button id="." >.</button>
+            <button id="=" >=</button>
+            <button id="/" >/</button>
+
+            <br>
+
+            <button id="C" >C</button>
+            <button id="(" >(</button>
+            <button id=")" >)</button>
+            
+        </div>
+    </body>
+    <script src="calculator.js"></script>
+</html>
+
+
+JS : - 
+
+var res = "";
+var calculator = document.getElementById('calc');
+document.getElementById('ip1').value = "";
+
+function equate(){
+   
+   res = document.getElementById('ip1').value;
+   res=eval(res);
+}
+
+//function clearVal(){
+  // document.getElementById('ip1').value = '';
+//}
+
+function result(event){
+    
+    var clickvalue = event.target.id;
+
+    if(clickvalue != '=' && clickvalue!= 'calc' && clickvalue!= 'C')
+    res = res + clickvalue;
+
+    else 
+    equate();
+    document.getElementById('ip1').value = res;
+    
+}
+calculator.addEventListener('click',result);
+
+
+ 
