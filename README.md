@@ -1,3 +1,3 @@
 # CASYL
 
-The folder is to capture the calculator built. Need to modify the file name.
+The folder captures the code to build a calculator. Need to modify the file name.
