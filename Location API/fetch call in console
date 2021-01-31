@@ -1,0 +1,1 @@
+fetch['https://api.openweathermap.org/data/2.5/weather?appid=c0c1fb6318fb7853720db372fb06c4ad&q=Mumbai'].then(res=>res.json()).then(res=>console.log("coming",res));
