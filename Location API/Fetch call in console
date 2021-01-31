@@ -1,0 +1,8 @@
+fetch('https://api.openweathermap.org/data/2.5/weather?appid=c0c1fb6318fb7853720db372fb06c4ad&q=Mumbai').then(res=>res.json()).then(res=>console.log("coming",res));
+
+Promise object is returned in the following.After ). we are using then to convert it into JSON.
+//convert it into json object and then return a promise. So using res.json
+
+coming {coord: {…}, weather: Array(1), base: "stations", main: {…}, visibility: 3500, …}base: "stations"clouds: {all: 0}cod: 200coord: {lon: 72.8479, lat: 19.0144}dt: 1612076012id: 1275339main: {temp: 303.67, feels_like: 302.47, temp_min: 302.15, temp_max: 305.15, pressure: 1014, …}name: "Mumbai"sys: {type: 1, id: 9052, country: "IN", sunrise: 1612057382, sunset: 1612098054}timezone: 19800visibility: 3500weather: [{…}]wind: {speed: 1.54, deg: 0}__proto__: Object
+
+We are able to get the same one in the console by hitting this 
